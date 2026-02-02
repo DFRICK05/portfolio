@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto+Mono:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+                "lil-gui": "https://unpkg.com/lil-gui@0.19.1/dist/lil-gui.esm.min.js"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="gui-container"></div>
+    <div id="ui-layer">
+        <nav>
+            <div class="logo">DHF.NET</div>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="DHAFFA">DHAFFA</h1>
+            </div>
+            <p class="fullname">Muhamad Dhaffa Ardisa Pratama</p>
+            <p class="subtitle">Informatics Student | Network & IT Enthusiast</p>
+            <div class="status-indicator">
+                <span class="dot"></span> SYSTEM ONLINE
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>// ABOUT_ME</h2>
+            <div class="card glass">
+                <p>I am a 4th-semester Informatics Engineering student with a primary interest in <strong>networking and
+                        IT infrastructure</strong>.</p>
+                <p>My current focus is developing core networking skills such as TCP/IP, subnetting, routing, and
+                    network simulation using Cisco Packet Tracer.</p>
+                <p>I am continuously upgrading my technical skills and improving my English to prepare for a
+                    professional career in <strong>Network Engineering</strong> or <strong>Network
+                        Administration</strong>.</p>
+            </div>
+        </section>
+
+        <section id="focus" class="content-section">
+            <h2>// CURRENT_FOCUS</h2>
+            <div class="grid">
+                <div class="card glass focus-card">
+                    <span class="icon">🎯</span>
+                    <p>Strengthening networking fundamentals</p>
+                </div>
+                <div class="card glass focus-card">
+                    <span class="icon">🖧</span>
+                    <p>Practicing network simulation & topology design</p>
+                </div>
+                <div class="card glass focus-card">
+                    <span class="icon">📚</span>
+                    <p>Learning real-world network concepts</p>
+                </div>
+                <div class="card glass focus-card">
+                    <span class="icon">🌐</span>
+                    <p>Improving technical English communication</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="content-section">
+            <h2>// SKILL_SET</h2>
+            <div class="skills-grid">
+                <div class="card glass skill-category">
+                    <h3>Networking</h3>
+                    <ul>
+                        <li>Basic TCP/IP</li>
+                        <li>Subnetting</li>
+                        <li>VLAN (basic)</li>
+                        <li>Static Routing (basic)</li>
+                        <li>Network Simulation</li>
+                    </ul>
+                </div>
+                <div class="card glass skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Cisco Packet Tracer</li>
+                        <li>Visual Studio Code</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="card glass skill-category">
+                    <h3>Other</h3>
+                    <ul>
+                        <li>Basic Web Dev (HTML, CSS, JS)</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+                <div class="card glass skill-category">
+                    <h3>Language</h3>
+                    <ul>
+                        <li>Indonesian (Native)</li>
+                        <li>English (Basic – Improving)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2>// PROJECT_LOGS</h2>
+            <div class="grid">
+                <a href="https://github.com/DFRICK05/campus-network-unibi" target="_blank" class="project-link">
+                    <div class="card glass project-card">
+                        <span class="project-icon">🏫</span>
+                        <h3>Campus Network Simulation – UNIBI</h3>
+                        <p class="project-tool">Cisco Packet Tracer | Academic Project</p>
+                        <p>Designed and simulated a campus network for a university environment. Includes IP addressing,
+                            subnetting, VLAN-based segmentation, inter-unit connectivity, and basic routing
+                            configuration.</p>
+                        <ul class="project-tasks">
+                            <li>Network topology design</li>
+                            <li>IP addressing & subnetting</li>
+                            <li>VLAN-based network segmentation</li>
+                            <li>Basic routing configuration</li>
+                            <li>Network connectivity testing</li>
+                        </ul>
+                        <span class="btn github-btn">View on GitHub →</span>
+                    </div>
+                </a>
+                <a href="https://github.com/DFRICK05/modern-hotel-network" target="_blank" class="project-link">
+                    <div class="card glass project-card">
+                        <span class="project-icon">🏨</span>
+                        <h3>Modern Hotel Network Simulation</h3>
+                        <p class="project-tool">Cisco Packet Tracer | Course Project</p>
+                        <p>Created a modern hotel network simulation using Cisco Packet Tracer, implementing VLAN-based
+                            segmentation, dynamic routing with OSPF, and DHCP for automatic IP address allocation across
+                            multiple floors.</p>
+                        <ul class="project-tasks">
+                            <li>Dynamic routing using OSPF</li>
+                            <li>DHCP-based IP address allocation</li>
+                            <li>Logical network segmentation</li>
+                            <li>Basic VLAN implementation</li>
+                            <li>Network simulation & testing</li>
+                        </ul>
+                        <span class="btn github-btn">View on GitHub →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>// ESTABLISH_LINK</h2>
+            <div class="card glass">
+                <p>Ready to collaborate on the next generation of networks.</p>
+                <a href="mailto:contact@dhaffa.net" class="btn">INITIALIZE HANDSHAKE</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>dhaffa.net &copy; 2026 // END_OF_LINE</p>
+        </footer>
+    </div>
+
+    <!-- Three.js Background -->
+    <script type="module" src="js/main.js"></script>
+
+    <!-- Scroll to home on refresh -->
+    <script>
+        window.addEventListener('load', () => {
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        });
+    </script>
+</body>
+
+</html>
