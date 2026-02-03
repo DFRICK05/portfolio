@@ -45,6 +45,20 @@ canvas {
     overflow-y: auto;
 }
 
+/* Reposition Settings GUI on mobile/tablet - move to bottom */
+@media (max-width: 1024px) {
+    #gui-container {
+        top: auto;
+        bottom: 10px;
+        right: 10px;
+        max-width: 280px;
+    }
+
+    #gui-container .lil-gui {
+        max-height: 50vh;
+    }
+}
+
 #ui-layer {
     position: relative;
     z-index: 1;
