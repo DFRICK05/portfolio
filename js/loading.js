@@ -1,4 +1,4 @@
-import { createTimeline, stagger, splitText } from 'https://esm.sh/animejs';
+import { createTimeline, stagger, splitText, animate, svg } from 'https://esm.sh/animejs';
 
 // Wait for DOM
 document.addEventListener('DOMContentLoaded', () => {
@@ -33,4 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 750,
             ease: 'inOut(2)',
         }, stagger(150, { from: 'center' }));
+
+    // Server Icon Draw Animation
+    animate(svg.createDrawable('.server-line'), {
+        draw: ['0 0', '0 1', '1 1'],
+        ease: 'inOutQuad',
+        duration: 2000,
+        delay: stagger(100),
+        loop: true
+    });
 });
